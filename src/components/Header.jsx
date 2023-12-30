@@ -1,26 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../assets/css/Header.css";
 
 function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
-
+    const menuBlock = useRef()
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
     };
-
     useEffect(() => {
-        const menuBlock = document.querySelector(".opened-block");
         if (isMenuOpen) {
-            menuBlock.style.display = "block";
+            menuBlock.current.style.display = "block";
             setTimeout(() => {
-                menuBlock.style.opacity = 1;
-                menuBlock.style.transform = "translateY(0)";
+                menuBlock.current.style.opacity = 1;
+                menuBlock.current.style.transform = "translateY(0)";
             }, 10);
         } else {
-            menuBlock.style.opacity = 0;
-            menuBlock.style.transform = "translateY(-10px)";
+            menuBlock.current.style.opacity = 0;
+            menuBlock.current.style.transform = "translateY(-10px)";
             setTimeout(() => {
-                menuBlock.style.display = "none";
+                menuBlock.current.style.display = "none";
             }, 300);
         }
     }, [isMenuOpen]);
@@ -28,7 +26,7 @@ function Header() {
     return (
         <div className="header">
             <div onClick={toggleMenu} className="menu-adaptive">
-                <div className="opened-block">
+                <div ref={menuBlock} className="opened-block">
                     <div className="opened-item">Главная</div>
                     <div className="opened-item">Ленты документов</div>
                     <div className="opened-item">База знаний</div>
