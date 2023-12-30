@@ -1,0 +1,138 @@
+.statistic-item-title {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #929EAB;
+    font-weight: 500;
+}
+
+.statistic-item-elem {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+.statistic-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.statistic-url-icon {
+    background-image: url("../images/Container/url.png");
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.url-item-elem {
+    display: flex;
+}
+
+.statistic-item-url {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.statistic-item-access {
+    font-weight: 700;
+    padding: 5px 8px 5px 8px;
+    border-radius: 12px;
+}
+
+.statistic-item-trust {
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 7px 9px;
+}
+
+.statistic-avatar {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.author-item-elem {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.short-statistic {
+    width: 48px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reaction-statistic {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.alert-img {
+    background-image: url("../images/Container/alert.png");
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.alert-counter {
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: sans-serif;
+    color: #4537DF;
+}
+
+
+@media (max-width:441px) {
+    .url-item-elem {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width:320px) {
+    .statistic-item-date-published {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width:308px) {
+    .statistic-item-access {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width:307px) {
+    .author-item-elem {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width:300px) {
+    .statistic-item-date-upload {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width:294px) {
+    .statistic-item-trust {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width:280px) {
+    .statistic-item-elem-parent {
+        margin-top: 8px;
+    }
+}

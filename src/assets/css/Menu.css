@@ -1,0 +1,120 @@
+.menu {
+    width: 96px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: 100vh;
+    background-color: white;
+}
+
+.menu-header {
+    height: 110px;
+    width: 100%;
+}
+
+.menu-logo {
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/Menu/Logo.png");
+    margin: auto;
+    margin-top: 25px;
+}
+
+.menu-header-text {
+    text-align: center;
+    font-family: sans-serif;
+    color: #637381;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.menu-btn {
+    width: 80px;
+    height: 68px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    margin: 0px 7px 0px 7px;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #4537DF14;
+}
+
+.menu-btn:hover>.menu-text {
+    color: #4537DF;
+}
+
+.menu-text {
+    transition: 0.3s ease-in-out;
+    font-family: sans-serif;
+    color: #637381;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -6px;
+}
+
+.main {
+    background-image: url("../images/Menu/speed.png");
+    width: 24px;
+    height: 20px;
+    padding-top: 18px;
+}
+
+.all-documents {
+    background-image: url("../images/Menu/documents.png");
+    width: 24px;
+    height: 18px;
+    padding-top: 18px;
+}
+
+.knowledge-base {
+    background-image: url("../images/Menu/museum.png");
+    width: 24px;
+    height: 24px;
+    padding-top: 18px;
+}
+
+.forms {
+    background-image: url("../images/Menu/note.png");
+    width: 22px;
+    height: 24px;
+    padding-top: 18px;
+}
+
+.reports {
+    background-image: url("../images/Menu/reports.png");
+    width: 22px;
+    height: 21px;
+    padding-top: 18px;
+}
+
+.analytic {
+    background-image: url("../images/Menu/analytic.png");
+    width: 24px;
+    height: 24px;
+    padding-top: 18px;
+}
+
+.btn-open-menu {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 19px;
+    left: 84px;
+    background-image: url("../images/Menu/openmenu.png");
+    border: 1px solid #637381;
+    background-position-x: 5px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:600px) {
+    .menu {
+        display: none;
+    }
+}

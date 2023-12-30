@@ -1,0 +1,42 @@
+.right-statistic-block {
+    max-width: 270px;
+    width: 100%;
+    height: 76px;
+    margin: 25px auto 25px auto;
+    font-family: sans-serif;
+}
+
+.right-statistic {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.communications-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.statistic-info {
+    font-size: 14px;
+}
+
+.statistic-info-elem-title {
+    color: #929EAB;
+}
+
+.statistic-info-elem {
+    display: flex;
+    margin-top: 3px;
+}
+
+.statistic-info-elem-count {
+    margin-left: 5px;
+}
+
+sup {
+    font-size: 8px;
+    color: #4537DF;
+    cursor: pointer;
+    font-weight: 700;
+}
